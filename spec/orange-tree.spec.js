@@ -24,6 +24,7 @@ describe('OrangeTree', () => {
   // Убери 'x' из `xdescribe`, чтобы включить эти тесты.
   xdescribe('passGrowingSeason', () => {
     test('should change the tree age', () => {
+      expect(newAge > oldAge).toBe(true);
 
     });
 

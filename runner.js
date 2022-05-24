@@ -15,9 +15,19 @@ while (!tree.isDead()) {
   while (tree.hasOranges()) {
     harvestedOranges.push(tree.pickAnOrange());
   }
-
-  let averageOrangeDiameter;
+  // let test = 0
+  // for (let i = 0; i < harvestedOranges.length; i++) {
+  //   test += harvestedOranges[i].diameter
+  // }
+  console.log(harvestedOranges)
+  const averageOrangeDiameter = (harvestedOranges
+    .reduce((acc, el) => (acc += el.diameter), 0) / harvestedOranges.length).toFixed(1);
+  //  test / harvestedOranges.length
+  // harvestedOranges.
+  //   reduce((acc, b) => (acc += b.diameter), 0) / harvestedOranges.length
   // averageOrangeDiameter = Need to calculate the average diameter for the harvest.
+
+
 
   const report = document.createElement("div");
   report.innerHTML = `
